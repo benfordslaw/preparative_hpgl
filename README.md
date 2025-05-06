@@ -44,6 +44,14 @@ Therefore, commands can simply be sent via `echo -n` to a tty device (in my case
 This means the script, which would by default print to STDOUT can be redirected via `>` to the device.
 That's really all there is to it, aside from annoying device permissions.
 
+### Usage
+Wouldn't recommend doing anything except using this as reference, but here's how to use the script:
+```
+bash gen.sh MODEL.gguf > /dev/tty/USB0
+```
+for some MODEL gguf you've downloaded.
+You must also have the `llama-cli` binary either in your path or in the current directory with all its library files.
+
 ## Results
 A series of plots for the current version was generated.
 The buffer fills rather quickly and I've built in no delay to the generation of list items, so they were simply run until the commands became garbled
