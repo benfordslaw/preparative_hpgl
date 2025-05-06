@@ -47,4 +47,9 @@ That's really all there is to it, aside from annoying device permissions.
 ## Results
 A series of plots for the current version was generated.
 The buffer fills rather quickly and I've built in no delay to the generation of list items, so they were simply run until the commands became garbled
-(usually resulting in `LB` printing some command like `PU140,50;...` through the next label's terminal character.
+(usually resulting in `LB` printing some command like `PU140,50;...` through the next label's terminal character. Below are three example groups.
+
+| 1 | 2 | 3 |
+|--|--|--|
+|![group_1](https://github.com/user-attachments/assets/e0dbf4ee-ad40-4d85-b1fb-d5f868ca78ab) | ![group_2](https://github.com/user-attachments/assets/101875c4-44c7-49ea-b80c-e9dcd3109056) | ![group_3](https://github.com/user-attachments/assets/2521c230-3f81-468f-9efb-60207603dad9) |
+
