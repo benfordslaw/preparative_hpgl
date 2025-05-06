@@ -32,7 +32,7 @@ This instantiates the stream and page, selects pen 1, selects the standard font,
 
 Each generated protective item is assigned an $x$, $y$ position within a range of $x_{group}$, $y_{group}$. The pen is moved to this point by `PU${x}${y};` 
 with an additional offset relative to the character size for bullet placement: `CP2.5,1;`. 
-A label for the generated item, with the bullet stripped via `cut`, is plotted with `LT;LB$(echo $ptoect | cut -d '-' -f 2).;`. 
+A label for the generated item, with the bullet stripped via `cut`, is plotted with `LT;LB$(echo $protect | cut -d '-' -f 2).;`. 
 Note the terminal `.` to signal the end of the label.
 A bullet point to the lower left is plotted via `PU${x},${y};CP2,0.5;WG25,0,360;PU${x},${y};CP2,0.5;CI25;`.
 The minimum and maximum $x$ and $y$ are stored for each label in a group to allow the group to be denoted by a leftward vertical bar.
